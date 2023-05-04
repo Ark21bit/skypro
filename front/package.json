@@ -12,6 +12,7 @@
     "@nuxt/devtools": "^0.4.5",
     "@nuxt/image-edge": "^1.0.0-28050764.aaee7ac",
     "@nuxtjs/google-fonts": "^3.0.0",
+    "@nuxtjs/strapi": "^1.9.1",
     "@nuxtjs/tailwindcss": "^6.6.7",
     "@types/node": "^18",
     "nuxt": "^3.4.3"
