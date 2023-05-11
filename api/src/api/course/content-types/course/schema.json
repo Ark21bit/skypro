@@ -4,27 +4,25 @@
   "info": {
     "singularName": "course",
     "pluralName": "courses",
-    "displayName": "course",
-    "description": ""
+    "displayName": "course"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "img": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "title": {
+      "type": "string"
     },
-    "seo_text": {
-      "type": "text"
+    "description": {
+      "type": "richtext"
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
