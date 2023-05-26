@@ -7,6 +7,11 @@ export default defineNuxtConfig({
         devtools: true,
         url: 'http://localhost:1337'
     },
+    runtimeConfig:{
+        public:{
+            baseUrl:"https://skynet-h2gp.onrender.com/api"
+        }
+    },
     googleFonts: {
         families: {
             Oswald: true,
