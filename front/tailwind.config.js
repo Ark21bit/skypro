@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-        'Oswald': 'Oswald',
+        'RobotoMono': 'RobotoMono',
     }
   }, 
   plugins: [FormKitVariants],

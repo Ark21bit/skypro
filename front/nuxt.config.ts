@@ -14,7 +14,10 @@ export default defineNuxtConfig({
     },
     googleFonts: {
         families: {
-            Oswald: true,
+            'Roboto+Mono': true,
         }
     },
+    devtools: {
+        enabled: true,
+    }
 })
