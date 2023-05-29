@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules:[
-        '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/devtools', '@formkit/nuxt', '@nuxt/image-edge', '@nuxtjs/strapi',
+        '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/devtools', '@formkit/nuxt', '@nuxt/image-edge', '@nuxtjs/strapi', 'nuxt-icon', '@vueuse/nuxt',
     ],
     strapi: {
         devtools: true,
