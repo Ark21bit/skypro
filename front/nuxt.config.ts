@@ -5,11 +5,11 @@ export default defineNuxtConfig({
     ],
     strapi: {
         devtools: true,
-        url: 'http://localhost:1337'
+        url: 'http://127.0.0.1:1337'
     },
     runtimeConfig:{
         public:{
-            baseUrl:"https://skynet-h2gp.onrender.com/api"
+            baseURL:"http://127.0.0.1:1337/api"
         }
     },
     googleFonts: {
@@ -19,5 +19,5 @@ export default defineNuxtConfig({
     },
     devtools: {
         enabled: true,
-    }
+    },
 })

@@ -1,16 +1,10 @@
 <template>
-    <div class="h-screen bg-black">
-      <img src="https://app.logoza.ru/?logo=774ddf8438933c093f902ce3b16fbfc1" alt="">
-    </div>
-  </template>
+    <img src="/images/header/logo.png" alt="" class="h-20">
+    <p class="text-white whitespace-pre">{{ data }}</p>
+</template>
   
   <script setup>
-  let value = ref({})
-
-  const {public:{baseUrl}} = useRuntimeConfig()
+  const { data, error, } = await useCFetch('/courses')
   
-  const { data, error } = await useFetch('/courses',{
-    baseURL:baseUrl
-  })
-  console.log(data)
+  console.log(error);
   </script>
