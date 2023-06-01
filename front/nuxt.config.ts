@@ -9,8 +9,12 @@ export default defineNuxtConfig({
       '@nuxtjs/strapi',
       'nuxt-icon',
       '@vueuse/nuxt',
-      '@vueuse/motion/nuxt'
+      '@vueuse/motion/nuxt',
+      'nuxt-swiper',
     ],
+    swiper: {      
+        modules: [ 'autoplay' ]
+    }, 
     strapi: {
         devtools: true,
         url: 'http://127.0.0.1:1337'
