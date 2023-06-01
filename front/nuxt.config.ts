@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     },
     runtimeConfig:{
         public:{
-            baseURL:"http://127.0.0.1:1337/api"
+            baseURL: process.env.NODE_ENV === 'dev' ? "http://127.0.0.1:1337/api" : "https://skynet-h2gp.onrender.com/api"
         }
     },
     googleFonts: {
