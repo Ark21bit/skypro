@@ -130,6 +130,7 @@
 			</NuxtLink>
 		</div>
 	</div>
+  
 	<Reviews />
 	<Score />
 </template>
@@ -141,8 +142,16 @@ useServerSeoMeta({
 	description: '',
 })
 
-const { data: courses, error } = await useCFetch('/courses', {
-	transform: (mountain) => mountain.data
-})
+/* код для связи с API */
+
+const { find } = useStrapi()
+
+const { data:courses, error } = await useAsyncData(
+  'courses',
+  () => find('courses'),
+  { transform: ( courses ) => courses.data }
+)
+
+if ( error.value ) console.log( error )
 
 </script>

@@ -13,6 +13,8 @@
                 <NuxtLink to="/" class="link-header">О нас</NuxtLink>
                 <NuxtLink to="/" class="link-header">О нас</NuxtLink>
                 <NuxtLink to="/" class="link-header">О нас</NuxtLink>
+                <p v-if="user" class="text-green-600">{{ user.username }}</p>
+                <button v-if="user" @click="logout" class="text-green-600">Выйти</button>
             </nav>
             <button class="w-6 h-4 text-white flex flex-col gap-1 lg:hidden" @click="menuIsShow = !menuIsShow">
                 <div class="w-full rounded-full bg-white h-0.5"></div>
@@ -24,6 +26,9 @@
 </template>
 
 <script setup>
+    const user = useStrapiUser()
+    const { logout } = useStrapiAuth()
+
     let menuIsShow = ref(false)
 </script>
 
