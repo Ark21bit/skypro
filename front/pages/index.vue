@@ -6,6 +6,7 @@
     <UseDark v-slot="{ isDark, toggleDark }">
       <button @click="toggleDark()" class="text-white">
         <Icon :name="isDark? 'iconamoon:mode-dark-fill' : 'heroicons-solid:sun'" class="text-white group-hover/icon:text-blue-400 transition-colors duration-500 ease-linear"/>
+        asdasdasd
       </button>
     </UseDark>
 </template>
