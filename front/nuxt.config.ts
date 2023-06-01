@@ -9,6 +9,7 @@ export default defineNuxtConfig({
       '@nuxtjs/strapi',
       'nuxt-icon',
       '@vueuse/nuxt',
+      '@vueuse/motion/nuxt'
     ],
     strapi: {
         devtools: true,
@@ -21,7 +22,7 @@ export default defineNuxtConfig({
     },
     googleFonts: {
         families: {
-            'Roboto+Mono': true,
+            'Inter': true,
         }
     },
     devtools: {

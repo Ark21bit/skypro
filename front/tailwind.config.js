@@ -7,7 +7,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-        'RobotoMono': 'RobotoMono',
+        'Inter': 'Inter',
     }
   }, 
   plugins: [FormKitVariants],

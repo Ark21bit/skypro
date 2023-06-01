@@ -1,9 +1,9 @@
 <template>
-    <!-- <Header/> -->
+    <Header/>
     <main class="grid-container">
         <NuxtPage/>
     </main>
-    <!-- <Footer/> -->
+    <Footer/>
 </template>
 
 <script setup>
