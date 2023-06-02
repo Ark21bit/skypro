@@ -1,7 +1,7 @@
 <template>
     <FormKit type="form" @submit="logIn">
-        <FormKit name="login" type="text" label="Логин"></FormKit>
-        <FormKit name="password" type="password" label="пароль"></FormKit>
+        <FormKit name="login" type="text" autocomplete="off" label="Логин"></FormKit>
+        <FormKit name="password" type="password" autocomplete="off" label="Пароль"></FormKit>
     </FormKit>
 </template>
 

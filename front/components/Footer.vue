@@ -13,11 +13,10 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-max">
                     <p class="col-span-full uppercase">О нас</p>
                     <NuxtLink to="/" class="link-footer">Курсы</NuxtLink>
-                    <NuxtLink to="/" class="link-footer">Вебинары</NuxtLink>
                     <NuxtLink to="/" class="link-footer">Контакты</NuxtLink>
                     <NuxtLink to="/" class="link-footer">Отзывы</NuxtLink>
                     <NuxtLink to="/" class="link-footer">Партнёрам</NuxtLink>
-                    <NuxtLink to="/" class="link-footer">Вход в SkyNet</NuxtLink>
+                    <NuxtLink to="/login" class="link-footer">Вход в SkyNet</NuxtLink>
                 </div>
             </div>
             <div class="flex items-start max-md:gap-8 max-md:flex-col md:justify-between">

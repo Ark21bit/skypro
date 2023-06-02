@@ -25,7 +25,9 @@
     "nuxt-swiper": "^1.1.0"
   },
   "dependencies": {
+    "@formkit/addons": "^0.17.2",
     "@vueuse/motion": "^2.0.0",
-    "nuxt-icon": "^0.4.1"
+    "nuxt-icon": "^0.4.1",
+    "vue-yandex-maps": "^0.12.6"
   }
 }
