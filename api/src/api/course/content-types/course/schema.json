@@ -18,12 +18,6 @@
     "description": {
       "type": "richtext"
     },
-    "lessons": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::lesson.lesson",
-      "mappedBy": "course"
-    },
     "users": {
       "type": "relation",
       "relation": "manyToMany",
@@ -37,6 +31,20 @@
     },
     "time": {
       "type": "float"
+    },
+    "title_short": {
+      "type": "string"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "course"
+    },
+    "lesson": {
+      "type": "component",
+      "repeatable": true,
+      "component": "lesson.lesson"
     }
   }
 }
