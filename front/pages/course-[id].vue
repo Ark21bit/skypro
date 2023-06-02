@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-full bg-[url(/images/courses/bg3.jpg)] bg-cover w-full h-96 bg-top-left relative py-8 lg:py-12 justify-center -mt-8 lg:-mt-12">        
+    <div class="col-span-full bg-[url(/images/courses/bg.jpg)] bg-cover w-full h-96 bg-top-left relative py-8 lg:py-12 justify-center -mt-8 lg:-mt-12">        
         <div class="absolute bg-black top-0 left-0 bg-opacity-60 w-full h-full"></div>
         <div class="wrapper flex flex-col gap-8 lg:gap-12 text-white z-10 relative">
             <div class="flex flex-col gap-1">
