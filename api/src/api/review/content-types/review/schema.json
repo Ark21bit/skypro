@@ -12,21 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "users_permissions_user": {
+    "users_permissions_users": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "reviews"
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
     },
     "description": {
       "type": "richtext",
       "required": true
-    },
-    "course": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::course.course",
-      "inversedBy": "reviews"
     }
   }
 }

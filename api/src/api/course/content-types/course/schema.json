@@ -35,16 +35,11 @@
     "title_short": {
       "type": "string"
     },
-    "reviews": {
+    "lessons": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::review.review",
+      "target": "api::lesson.lesson",
       "mappedBy": "course"
-    },
-    "lesson": {
-      "type": "component",
-      "repeatable": true,
-      "component": "lesson.lesson"
     }
   }
 }
