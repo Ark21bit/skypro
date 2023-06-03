@@ -70,6 +70,14 @@
       "relation": "manyToMany",
       "target": "api::course.course",
       "inversedBy": "users"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
