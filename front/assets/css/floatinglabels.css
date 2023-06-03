@@ -1,6 +1,6 @@
   :root {
     --floating-Labels-bg:transparent;
-    --floating-Labels-focus-text:white;
+    --floating-Labels-text:white;
     --floating-Labels-focus-bg:#0f1119;
   }
   
@@ -12,7 +12,7 @@
     position: absolute;
     left: .5em;
     background-color: var(--floating-Labels-bg);
-    color: var(--floating-Labels-focus-text);
+    color: var(--floating-Labels-text);
     font-weight: normal;
     font-size: 1rem;
     transition: all 0.2s ease-out;
@@ -34,6 +34,7 @@
     z-index: 2;
     transition-delay: 0s;
     transition-duration: 0.25s;
+    color: var(--floating-Labels-text);
   }
   
   /* special considerations for placeholders and overlays */

@@ -49,7 +49,13 @@
 </template>
 
 <script setup>
+    useServerSeoMeta({
+        title: 'Контакты',
+        keywords: '',
+        description: '',
+    })
     let coord = ref([56.121160, 47.277974])
+    
     const { find } = useStrapi()
 
     const { data:courses, error } = await useAsyncData(
