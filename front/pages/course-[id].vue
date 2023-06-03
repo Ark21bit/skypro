@@ -70,7 +70,6 @@
             <li>Поддержка наставника</li>
             <li>Мастер-классы онлайн с реальными рабочими задачами</li>
         </ul>
-        {{errorCourse}}
     </div>
 </template>
 
@@ -89,21 +88,21 @@
 
     const { data:teachers, error:errorTeachers } = await useAsyncData(
         'teachers',
-        () => find('teachers?populate=img'),
+        (error) => find('teachers?populate=img'),
         { transform: ( teachers ) => teachers.data }
     )
 
     if ( errorTeachers.value ) console.log( errorTeachers )
 
      /* код для выборки курса с API */
+     
+    const strapiUrl = useStrapiUrl()
 
-    const { findOne } = useStrapi()  
-
-    const { data:course, error:errorCourse } = await useAsyncData(
-        'course',
-        () => findOne('courses', route.params.id),
-        { transform: ( course ) => course.data }
-    )
+    const { data:course, error:errorCourse } = await useFetch(`courses/${route.params.id}`, {
+        baseURL:strapiUrl,
+        key:'course',
+        transform: ( course ) => course.data
+    })
     
-    if ( !course.value ) throw createError({ statusCode: 404, statusMessage: 'Not Found' })  
+    if ( errorCourse.value ) throw createError({ statusCode: errorCourse.value.statusCode, statusMessage: errorCourse.value.statusMessage })  
 </script>
