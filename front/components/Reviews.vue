@@ -14,10 +14,11 @@
             1440: {
                 'slidesPerView': 4
             },
-        }" :slides-per-view="1" :space-between="30" :loop="true" :speed="15000" :modules="[SwiperAutoplay]"
-            :autoplay="{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true, reverseDirection: false }"
-            class="w-full text-black swiper-reviews">
-            <SwiperSlide v-for="item in 10" class="slide-reviews">
+        }" 
+        :slides-per-view="1" :space-between="30" :loop="true" :speed="15000" :modules="[SwiperAutoplay]"
+        :autoplay="{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true, reverseDirection: false }"
+        class="w-full text-black swiper-reviews">
+            <SwiperSlide v-for="item in reviews" class="slide-reviews">
                 <div class="flex items-center gap-6">
                     <img src="https://thumb.tildacdn.com/tild3162-6465-4061-b462-336466313032/-/cover/120x120/center/center/-/format/webp/_.jpeg"
                         alt="" class="rounded-full w-20">
@@ -28,15 +29,20 @@
                     quo alias sed, accusamus odio omnis.</p>
             </SwiperSlide>
         </Swiper>
-        <NuxtLink to="/" class="flex items-center justify-end gap-2">
-            <span>Все отзывы</span>
-            <Icon name="material-symbols:arrow-right-alt-rounded" />
-        </NuxtLink>
+        {{reviews}}
     </div>
 </template>
 
 <script setup>
+    const { find } = useStrapi()
 
+    const { data:reviews, error } = await useAsyncData(
+        'reviews',
+        () => find('reviews'),
+        { transform: ( reviews ) => reviews.data }
+    )
+
+    if (error.value) console.log(error); 
 </script>
 
 <style type="text/tailwindcss">

@@ -12,13 +12,88 @@
 	}" :slides-per-view="2" :space-between="30" :loop="true" :speed="5000" :modules="[SwiperAutoplay]"
 		:autoplay="{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true, reverseDirection: false }"
 		class="w-full swiper-score">
-		<SwiperSlide v-for="item in 10" class="slide-score">
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.4</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/academy.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">10 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.4</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/catalog.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">12 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.3</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/kurs.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">17 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
 			<p class="text-4xl md:text-5xl">4.9</p>
 			<div class="flex flex-col gap-0.5">
-				<p class="text-lg md:text-xl">Логотип портала</p>
-				<NuxtLink to="/"
-					class="text-sm md:text-base underline text-[#787878] transition-colors duration-500 hover:text-white">22
-					отзыва</NuxtLink>
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/kurses.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">20 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.7</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/obrazoval.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">19 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.2</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/sravni.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">7 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.4</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/academy.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">10 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.4</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/catalog.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">12 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.3</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/kurs.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">17 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.9</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/kurses.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">20 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.7</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/obrazoval.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">19 отзывов</p>
+			</div>
+		</SwiperSlide>
+		<SwiperSlide class="slide-score">
+			<p class="text-4xl md:text-5xl">4.2</p>
+			<div class="flex flex-col gap-0.5">
+				<img class="w-48 h-10 aspect-video object-contain object-left" src="/images/score/sravni.png" alt="">
+				<p class="text-sm md:text-base underline text-[#787878]">7 отзывов</p>
 			</div>
 		</SwiperSlide>
 	</Swiper>

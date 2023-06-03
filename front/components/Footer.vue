@@ -6,16 +6,16 @@
                     <p class="col-span-full uppercase">Профессии</p>
                     <NuxtLink to="/" class="link-footer">Веб-разработчик</NuxtLink>
                     <NuxtLink to="/" class="link-footer">Python-разработчик</NuxtLink>
-                    <NuxtLink to="/" class="link-footer">Java-разработчик</NuxtLink>
-                    <NuxtLink to="/" class="link-footer">Аналитик данных</NuxtLink>
-                    <NuxtLink to="/" class="link-footer">Графический дизайнер</NuxtLink>
+                    <NuxtLink to="/course-6" class="link-footer">Аналитик данных</NuxtLink>
+                    <NuxtLink to="/course-7" class="link-footer">Java-разработчик</NuxtLink>
+                    <NuxtLink to="/course-8" class="link-footer">Графический дизайнер</NuxtLink>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-max">
                     <p class="col-span-full uppercase">О нас</p>
-                    <NuxtLink to="/" class="link-footer">Курсы</NuxtLink>
-                    <NuxtLink to="/" class="link-footer">Контакты</NuxtLink>
-                    <NuxtLink to="/" class="link-footer">Отзывы</NuxtLink>
-                    <NuxtLink to="/" class="link-footer">Партнёрам</NuxtLink>
+                    <NuxtLink to="/courses" class="link-footer">Курсы</NuxtLink>
+                    <NuxtLink to="/contacts" class="link-footer">Контакты</NuxtLink>
+                    <NuxtLink to="/reviews" class="link-footer">Отзывы</NuxtLink>
+                    <NuxtLink to="/partners" class="link-footer">Партнёрам</NuxtLink>
                     <NuxtLink to="/login" class="link-footer">Вход в SkyNet</NuxtLink>
                 </div>
             </div>
@@ -26,10 +26,10 @@
                     <p class="text-[#787878]">© SkyNet 2023</p>
                 </div>
                 <div class="flex items-center gap-4">
-                    <NuxtLink to="/">
+                    <NuxtLink to="https://t.me/s/okchemk" target="_blank">
                         <img src="/images/icons/tg.png" alt="" class="w-10 h-10">
                     </NuxtLink>
-                    <NuxtLink to="/">
+                    <NuxtLink to="https://vk.com/chemk21" target="_blank">
                         <img src="/images/icons/vk.png" alt="" class="w-10 h-10">
                     </NuxtLink>
                 </div>
