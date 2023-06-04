@@ -7,7 +7,8 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "text": {
       "type": "richtext"
@@ -19,6 +20,12 @@
       "allowedTypes": [
         "videos"
       ]
+    },
+    "Tests": {
+      "displayName": "Test",
+      "type": "component",
+      "repeatable": true,
+      "component": "test.test"
     }
   }
 }

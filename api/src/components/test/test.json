@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_test_tests",
+  "info": {
+    "displayName": "Test",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "input",
+        "radio",
+        "checkbox"
+      ],
+      "default": "input",
+      "required": true
+    },
+    "AnswerOptions": {
+      "type": "json"
+    },
+    "Answer": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
