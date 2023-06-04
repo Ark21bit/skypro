@@ -4,7 +4,8 @@
   "info": {
     "singularName": "teacher",
     "pluralName": "teachers",
-    "displayName": "teacher"
+    "displayName": "teacher",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,17 +17,20 @@
       "required": true
     },
     "lastname": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

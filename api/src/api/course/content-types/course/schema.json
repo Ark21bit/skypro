@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "users": {
       "type": "relation",
@@ -30,16 +32,16 @@
       "min": 0
     },
     "time": {
-      "type": "float"
+      "type": "float",
+      "required": true
     },
     "title_short": {
       "type": "string"
     },
-    "lessons": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::lesson.lesson",
-      "mappedBy": "course"
+    "less": {
+      "type": "component",
+      "repeatable": true,
+      "component": "lesson.less"
     }
   }
 }

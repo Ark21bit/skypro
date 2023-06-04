@@ -88,7 +88,7 @@
 
     const { data:teachers, error:errorTeachers } = await useAsyncData(
         'teachers',
-        (error) => find('teachers?populate=img'),
+        () => find('teachers?populate=img'),
         { transform: ( teachers ) => teachers.data }
     )
 
