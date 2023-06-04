@@ -26,7 +26,7 @@
             <FormKit name="description" autocomplete="off" validation="required" label="Текст отзыва" type="textarea" outer-class="w-full md:w-1/2" inner-class="$remove:focus-within:ring-blue-500 focus-within:ring-[#829D32] $remove:max-w-md" input-class="#remove:text-gray-700 text-white"></FormKit>
             <FormKitMessages class="w-full md:w-1/2"/>
             <FormKit type="submit" input-class="$remove:bg-blue-600 bg-[#829D32] $remove:font-normal font-semibold rounded-2xl" :ignore="false">Отправить</FormKit>
-            <button @click="message.title = null" class="flex items-center gap-4 px-6 py-2 rounded-2xl w-fit" :class="message.type? 'bg-green-500' : 'bg-red-500'" v-if="message.title">
+            <button type="button" @click="message.title = null" class="flex items-center gap-4 px-6 py-2 rounded-2xl w-fit" :class="message.type? 'bg-green-500' : 'bg-red-500'" v-if="message.title">
                 <span>{{message.title}}</span>
                 <Icon name="material-symbols:close-rounded" class="text-xl"/>
             </button>
@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-    import { resetm } from '@formkit/core'
+    import { reset } from '@formkit/core'
     import { FormKitMessages } from '@formkit/vue'
     useServerSeoMeta({
         title: 'Отзывы',

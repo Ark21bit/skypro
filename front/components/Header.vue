@@ -18,9 +18,9 @@
                 <NuxtLink v-if="!user" to="/login" class="link-header">Вход</NuxtLink>
             </nav>
             <button class="w-6 h-4 text-white flex flex-col gap-1 lg:hidden" @click="menuIsShow = !menuIsShow">
-                <div class="w-full rounded-full bg-white h-0.5"></div>
-                <div class="w-full rounded-full bg-white h-0.5"></div>
-                <div class="w-full rounded-full bg-white h-0.5"></div>
+                <span class="w-full rounded-full bg-white h-0.5"></span>
+                <span class="w-full rounded-full bg-white h-0.5"></span>
+                <span class="w-full rounded-full bg-white h-0.5"></span>
             </button>
         </div>
     </header>

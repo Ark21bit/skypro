@@ -39,8 +39,9 @@
 <script setup>
 	useServerSeoMeta({
 		title: 'Главная',
-		keywords: '',
-		description: '',
+		keywords: ['Электронная платформа обучения', 'платформа обучения' , 'SkyNet'],
+		description: 'SkyNet — программирование, маркетинг, аналитика и другие профессии. Онлайн-курсы.',
+		lang: 'ru'
 	})
 
 	/* код для связи с API */
