@@ -38,7 +38,7 @@
     "title_short": {
       "type": "string"
     },
-    "less": {
+    "lessons": {
       "type": "component",
       "repeatable": true,
       "component": "lesson.less"
