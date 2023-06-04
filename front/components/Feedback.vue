@@ -2,7 +2,7 @@
     <div class="w-full bg-white rounded-2xl p-4 flex flex-col gap-6">
 		<p class="text-lg md:text-xl text-[#829D32]">Поможем вам в выборе курса и окажем любую помощь</p>
         <FormKit id="feedback" @submit="feedback" type="form" form-class="flex flex-col gap-4 w-full" :actions="false">
-			<div class="flex gap-4">
+			<div class="flex max-md:flex-col gap-4">
 				<FormKit name="name" autocomplete="off" validation="required" label-class="[--floating-Labels-focus-bg:white] [--floating-Labels-text:#787878]" label="Имя" type="text" inner-class="$remove:focus-within:ring-blue-500 focus-within:ring-[#829D32]"></FormKit>
 				<FormKit name="email" autocomplete="off" validation="required|email" label-class="[--floating-Labels-focus-bg:white] [--floating-Labels-text:#787878]" label="Почта" type="email" inner-class="$remove:focus-within:ring-blue-500 focus-within:ring-[#829D32]"></FormKit>
 				<FormKit type="submit" input-class="$remove:bg-blue-600 bg-[#829D32] $remove:font-normal font-semibold rounded-2xl" outer-class="md:ml-auto" :ignore="false">Отправить</FormKit>

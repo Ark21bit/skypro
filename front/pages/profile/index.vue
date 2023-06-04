@@ -27,7 +27,7 @@
 			<div class="rounded-full bg-white h-0.5 w-8"></div>
 		</div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" v-if="courses?.length > 0">
-            <NuxtLink v-for="course in courses" :to="`/profile/courses/${course.id}`" class="rounded-2xl bg-[#272830] p-4 flex flex-col transition-all duration-500 hover:bg-opacity-80">
+            <NuxtLink v-for="course in courses" :to="`/profile/course-${course.id}`" class="rounded-2xl bg-[#272830] p-4 flex flex-col transition-all duration-500 hover:bg-opacity-80">
                 <span class="uppercase text-lg md:text-xl pb-32 grow">{{ course.attributes.title }}</span>
                 <span class="rounded-full px-6 py-2 bg-[#829D32] text-sm md:text-base w-fit">Начать обучение</span>
             </NuxtLink>
@@ -40,6 +40,11 @@
 </template>
 
 <script setup>
+    useServerSeoMeta({
+        title: 'Профиль',
+        keywords: '',
+        description: '',
+    })
     definePageMeta({
         middleware: ["auth"]
     })
@@ -52,7 +57,7 @@
 	const { data:courses, error } = await useAsyncData('myCourses',
 	 	()=>find('courses/lessons'),
 	 	{ 
-			headers:{authorization:`Bearer ${token}`},
+			headers:{authorization:`Bearer ${token.value}`},
 			transform: (courses) => courses.data
 		}	 
 	)

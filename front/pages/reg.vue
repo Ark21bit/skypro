@@ -18,6 +18,12 @@
 <script setup>
     import { FormKitMessages } from '@formkit/vue'
 
+    useServerSeoMeta({
+        title: 'Регистрация',
+        keywords: '',
+        description: '',
+    })
+
     const { register } = useStrapiAuth()
     const { create } = useStrapi()
     const router = useRouter()

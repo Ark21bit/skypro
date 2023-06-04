@@ -12,13 +12,18 @@
 </template>
 
 <script setup>
-const { login } = useStrapiAuth()
+    useServerSeoMeta({
+            title: 'Логин',
+            keywords: '',
+            description: '',
+        })
+    const { login } = useStrapiAuth()
 
-const router = useRouter()
+    const router = useRouter()
 
-const logIn = async(forms)=>{    
-    const { data, error } = await useAsyncData( 'login', () => login({ identifier: forms.login, password: forms.password }) )
-    if ( error.value ) return console.log(error)
-    router.push('/')
-}
+    const logIn = async(forms)=>{    
+        const { data, error } = await useAsyncData( 'login', () => login({ identifier: forms.login, password: forms.password }) )
+        if ( error.value ) return console.log(error)
+        router.push('/')
+    }
 </script>

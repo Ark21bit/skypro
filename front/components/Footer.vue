@@ -2,15 +2,15 @@
     <footer class="grid-container py-4 mt-auto bg-gradient-to-b from-[#0f1119] to-black font-semibold text-sm md:text-base">
         <div class="flex flex-col gap-8 lg:gap-12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-max ">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-max h-fit">
                     <p class="col-span-full uppercase">Профессии</p>
-                    <NuxtLink to="/" class="link-footer">Веб-разработчик</NuxtLink>
-                    <NuxtLink to="/" class="link-footer">Python-разработчик</NuxtLink>
+                    <!-- <NuxtLink to="/" class="link-footer">Веб-разработчик</NuxtLink>
+                    <NuxtLink to="/" class="link-footer">Python-разработчик</NuxtLink> -->
                     <NuxtLink to="/course-6" class="link-footer">Аналитик данных</NuxtLink>
                     <NuxtLink to="/course-7" class="link-footer">Java-разработчик</NuxtLink>
                     <NuxtLink to="/course-8" class="link-footer">Графический дизайнер</NuxtLink>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-max">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-max h-fit">
                     <p class="col-span-full uppercase">О нас</p>
                     <NuxtLink to="/courses" class="link-footer">Курсы</NuxtLink>
                     <NuxtLink to="/contacts" class="link-footer">Контакты</NuxtLink>
@@ -44,6 +44,6 @@
 
 <style type="">
     .link-footer {
-        @apply text-[#787878] transition-colors duration-500 hover:text-white
+        @apply text-[#787878] transition-colors duration-500 hover:text-white h-fit
     }
 </style>

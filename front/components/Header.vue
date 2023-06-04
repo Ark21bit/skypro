@@ -7,14 +7,15 @@
             <NuxtLink to="/">
                 <img src="/images/header/logo.png" alt="" class="h-6">
             </NuxtLink>
-            <nav class="text-sm md:text-base flex max-lg:flex-col max-lg:absolute max-lg:w-full left-0 top-0 max-lg:py-6 items-center gap-6 transition-all duration-500 max-lg:border-t-2 border-white bg-[#0f1119]" :class=" menuIsShow ? 'top-full' : 'top-0 max-lg:-translate-y-full' ">
-                <NuxtLink to="/" class="link-header">О нас</NuxtLink>
-                <NuxtLink to="/" class="link-header">О нас</NuxtLink>
-                <NuxtLink to="/" class="link-header">О нас</NuxtLink>
-                <NuxtLink to="/" class="link-header">О нас</NuxtLink>
-                <NuxtLink to="/" class="link-header">О нас</NuxtLink>
-                <p v-if="user" class="text-green-600">{{ user.username }}</p>
-                <button v-if="user" @click="logout" class="text-green-600">Выйти</button>
+            <nav class="text-sm md:text-base flex max-lg:flex-col max-lg:absolute max-lg:z-50 max-lg:w-full left-0 top-0 max-lg:py-6 items-center gap-6 transition-all duration-500 max-lg:border-t-2 border-white bg-[#0f1119]" :class=" menuIsShow ? 'top-full' : 'top-0 max-lg:-translate-y-full' ">
+                <NuxtLink to="/courses" class="link-header">Все курсы</NuxtLink>
+                <NuxtLink to="/contacts" class="link-header">Контакты</NuxtLink>
+                <NuxtLink to="/reviews" class="link-header">Отзывы</NuxtLink>
+                <NuxtLink to="/partners" class="link-header">Партнёрам</NuxtLink>
+                <NuxtLink to="/profile" class="link-header" v-if="user">Профиль</NuxtLink>
+                <button v-if="user" class="link-header" @click="logout">Выйти</button>
+                <NuxtLink v-if="!user" to="/reg" class="link-header">Регистрация</NuxtLink>
+                <NuxtLink v-if="!user" to="/login" class="link-header">Вход</NuxtLink>
             </nav>
             <button class="w-6 h-4 text-white flex flex-col gap-1 lg:hidden" @click="menuIsShow = !menuIsShow">
                 <div class="w-full rounded-full bg-white h-0.5"></div>

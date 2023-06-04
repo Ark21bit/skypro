@@ -7,7 +7,7 @@
                 <p class="text-3xl md:text-4xl lg:text-5xl text-center">новая работа уже через</p>
                 <p class="text-3xl md:text-4xl lg:text-5xl text-center">{{ course?.attributes?.time }} мес.</p>
             </div>
-            <button class="w-full rounded-full bg-[#829D32] text-white transition-colors duration-500 hover: px-5 py-3 text-lg md:text-xl">Записаться на курс</button>
+            <NuxtLink to="#course" class="text-center w-full rounded-full bg-[#829D32] text-white transition-colors duration-500 hover: px-5 py-3 text-lg md:text-xl">Записаться на курс</NuxtLink>
         </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -25,7 +25,7 @@
         </div>
     </div>
 	
-	<Feedback/>
+	<Feedback id="course"/>
     <Warranty/>
     <Students/>
 
