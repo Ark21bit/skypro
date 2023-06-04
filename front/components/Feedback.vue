@@ -1,6 +1,6 @@
 <template>
     <div class="w-full bg-white rounded-2xl p-4 flex flex-col gap-6">
-		<p class="text-lg md:text-xl text-[#829D32]">Поможем вам разобраться в курсах и подберём лучшее решение</p>
+		<p class="text-lg md:text-xl text-[#829D32]">Поможем вам в выборе курса и окажем любую помощь</p>
         <FormKit id="feedback" @submit="feedback" type="form" form-class="flex flex-col gap-4 w-full" :actions="false">
 			<div class="flex gap-4">
 				<FormKit name="name" autocomplete="off" validation="required" label-class="[--floating-Labels-focus-bg:white] [--floating-Labels-text:#787878]" label="Имя" type="text" inner-class="$remove:focus-within:ring-blue-500 focus-within:ring-[#829D32]"></FormKit>

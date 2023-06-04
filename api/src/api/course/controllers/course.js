@@ -37,6 +37,7 @@ module.exports = createCoreController('api::course.course', ({ strapi }) => ({
 
     const entry = await strapi.db.query('api::course.course').findOne({
       where: { id:ctx.request.params.id, users: user.id },
+      populate:{lessons:true}
     });
 
     return this.transformResponse(entry);
