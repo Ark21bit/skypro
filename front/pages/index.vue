@@ -3,7 +3,7 @@
 	<div class="flex flex-col gap-6 lg:gap-8">
 		<div class="flex items-center gap-4">
 			<p class="text-xl md:text-2xl uppercase">Наши преимущества</p>
-			<div class="rounded-full bg-white h-0.5 w-8"></div>
+			<div class="rounded-full bg-[#0f1119] dark:bg-white h-0.5 w-8"></div>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 text-sm md:text-base">
 			<div class="flex flex-col gap-4">

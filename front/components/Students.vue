@@ -2,10 +2,10 @@
     <div class="flex flex-col gap-6 lg:gap-8">
 		<div class="flex items-center gap-4">
 			<p class="text-xl md:text-2xl uppercase">Категории студентов</p>
-			<div class="rounded-full bg-white h-0.5 w-8"></div>
+			<div class="rounded-full bg-[#0f1119] dark:bg-white h-0.5 w-8"></div>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 text-sm md:text-base">
-			<div class="rounded-2xl p-4 bg-[#272830] flex flex-col gap-4">
+			<div class="rounded-2xl p-4 bg-white shadow-[0_0_20px_-7px] dark:shadow-none dark:bg-[#272830] flex flex-col gap-4">
 				<p class="text-base md:text-lg">С любым образованием</p>
 				<div class="flex flex-col gap-2">
 					<div class="flex items-center justify-between rounded-lg px-2 py-1 bg-blue-500 w-[82%]">
@@ -30,7 +30,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="rounded-2xl p-4 bg-[#272830] flex flex-col gap-4">
+			<div class="rounded-2xl p-4 bg-white shadow-[0_0_20px_-7px] dark:shadow-none dark:bg-[#272830] flex flex-col gap-4">
 				<p class="text-base md:text-lg">С опытом и без него</p>
 				<div class="flex flex-col gap-2">
 					<div class="flex items-center justify-between rounded-lg px-2 py-1 bg-lime-500 w-[82%]">
@@ -55,7 +55,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="rounded-2xl p-4 bg-[#272830] flex flex-col gap-4">
+			<div class="rounded-2xl p-4 bg-white shadow-[0_0_20px_-7px] dark:shadow-none dark:bg-[#272830] flex flex-col gap-4">
 				<p class="text-base md:text-lg">Разных возрастов</p>
 				<div class="flex flex-col gap-2">
 					<div class="flex items-center gap-4">

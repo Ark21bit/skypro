@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full bg-white rounded-2xl p-4 flex flex-col gap-6">
+    <div class="w-full shadow-[0_0_20px_-7px] dark:shadow-none bg-white rounded-2xl p-4 flex flex-col gap-6">
 		<p class="text-lg md:text-xl text-[#829D32]">Поможем вам в выборе курса и окажем любую помощь</p>
         <FormKit id="feedback" @submit="feedback" type="form" form-class="flex flex-col gap-4 w-full" :actions="false">
 			<div class="flex max-md:flex-col gap-4">

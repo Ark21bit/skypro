@@ -60,10 +60,10 @@
         </div>
     </div>
 
-    <div class="bg-white rounded-2xl p-4 flex flex-col gap-6 lg:gap-8 text-black">
+    <div class="shadow-[0_0_20px_-7px] dark:shadow-none bg-white rounded-2xl p-4 flex flex-col gap-6 lg:gap-8 text-[#0f1119]">
         <div class="flex max-md:flex-col md:justify-between md:items-center gap-4">
             <p class="text-xl md:text-2xl lg:text-3xl">Программа обучения</p>
-            <p class="rounded-full border border-black w-fit px-4 py-1 text-xs md:text-sm">{{ course?.attributes?.time * 32 }} ч. обучения</p>            
+            <p class="rounded-full border border-[#0f1119] w-fit px-4 py-1 text-xs md:text-sm">{{ course?.attributes?.time * 32 }} ч. обучения</p>            
         </div>
         <ul class="list-inside list-disc">
             <li>Индивидуальная проверка домашних заданий</li>

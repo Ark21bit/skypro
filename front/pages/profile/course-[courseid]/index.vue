@@ -5,8 +5,8 @@
 			<div class="rounded-full bg-white h-0.5 w-8"></div>
 		</div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-           <NuxtLink v-for="lesson in course?.attributes?.lessons" :to="`/profile/course-${$route.params.courseid}/lessons-${lesson.id}`" class="flex flex-col gap-6 md:gap-8 rounded-2xl overflow-hidden bg-[#272830]">
-                <img src="/images/lessons/main.png" alt="">
+           <NuxtLink v-for="lesson in course?.attributes?.lessons" :to="`/profile/course-${$route.params.courseid}/lessons-${lesson.id}`" class="flex flex-col gap-6 md:gap-8 rounded-2xl overflow-hidden shadow-[0_0_20px_-7px] dark:shadow-none dark:bg-[#272830]">
+                <img src="/images/lessons/main.png" alt="" class="pb-4 dark:pb-0 border-b-2 border-[#0f1119] dark:border-none">
                 <div class="flex flex-col px-4 pb-6 md:pb-8">
                     <Icon name="material-symbols:play-circle" class="text-3xl self-end"/>
                     <p class="text-base md:text-lg px-4 pb-4">{{ lesson.title }}</p>

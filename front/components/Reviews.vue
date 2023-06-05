@@ -2,7 +2,7 @@
     <div class="flex flex-col gap-6 lg:gap-8">
         <div class="flex items-center gap-4">
             <p class="text-xl md:text-2xl uppercase">Отзывы</p>
-            <div class="rounded-full bg-white h-0.5 w-8"></div>
+            <div class="rounded-full bg-[#0f1119] dark:bg-white h-0.5 w-8"></div>
         </div>
         <Swiper :breakpoints="{
             768: {
@@ -47,6 +47,6 @@
 }
 
 .slide-reviews {
-    @apply bg-white p-4 rounded-2xl flex flex-col gap-4
+    @apply bg-[#0f1119] text-white dark:text-[#0f1119] dark:bg-white p-4 rounded-2xl flex flex-col gap-4
 }
 </style>

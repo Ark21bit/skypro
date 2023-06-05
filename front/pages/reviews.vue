@@ -11,7 +11,7 @@
     <div class="flex flex-col gap-4 w-full rounded-2xl bg-cover bg-center bg-[url(/images/reviews/job.jpg)] relative justify-center overflow-hidden p-4">
         <div class="absolute bg-black top-0 left-0 bg-opacity-70 w-full h-full"></div>
         <div class="flex items-center gap-4 z-10">
-            <p class="text-xl md:text-2xl uppercase">Выбор курса</p>
+            <p class="text-xl md:text-2xl uppercase text-white">Выбор курса</p>
             <div class="rounded-full bg-white h-0.5 w-8"></div>
         </div>
         <NuxtLink to="/courses" class="w-full rounded-full bg-[#829D32] text-white transition-colors duration-500 hover: px-5 py-3 text-lg md:text-xl z-10 text-center">Хочу новые знания</NuxtLink>
