@@ -54,15 +54,15 @@
         keywords: '',
         description: '',
     })
-    let coord = ref([56.121160, 47.277974])
-    
-    const { find } = useStrapi()
+    let coord = ref([56.121160, 47.277974])  
 
-    const { data:courses, error } = await useAsyncData(
-    'courses',
-    () => find('courses'),
-    { transform: ( courses ) => courses.data }
-    )
+    const strapiUrl = useStrapiUrl()
 
-    if ( error.value ) console.log( error )
+    const { data:courses, error } = await useFetch('courses',{
+        baseURL:strapiUrl,
+        key:'courses',
+        transform: ( courses ) => courses.data
+    })
+
+    if( error.value ) throw createError({ statusMessage:error.value.statusMessage, statusCode:error.value.statusCode })
 </script>

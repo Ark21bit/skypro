@@ -51,16 +51,14 @@
 
 	const user = useStrapiUser()
 	const token = useStrapiToken()
+    const strapiUrl = useStrapiUrl()
 
-	const { find } = useStrapi()
+    const { data:courses, error } = await useFetch(`courses/lessons`, {
+        baseURL:strapiUrl,
+        headers:{authorization:`Bearer ${token.value}`},
+        key:'myCourses',
+        transform: ( courses ) => courses.data
+    })
 
-	const { data:courses, error } = await useAsyncData('myCourses',
-	 	()=>find('courses/lessons'),
-	 	{ 
-			headers:{authorization:`Bearer ${token.value}`},
-			transform: (courses) => courses.data
-		}	 
-	)
-
-	if( error.value ) console.log(error)
+    if( error.value /* && error.value.statusCode != 404 */) throw createError({ statusMessage:error.value.statusMessage, statusCode:error.value.statusCode })
 </script>
