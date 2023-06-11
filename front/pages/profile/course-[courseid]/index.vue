@@ -22,6 +22,7 @@
         keywords: '',
         description: '',
     })
+
     definePageMeta({
         middleware: ["auth"]
     })
@@ -29,15 +30,14 @@
     const route = useRoute()
 
     const token = useStrapiToken()
+    const strapiUrl = useStrapiUrl() 
 
-    const { findOne } = useStrapi()
+    const { data:course, error } = await useFetch(`courses/${route.params.courseid}/lessons`,{
+        baseURL:strapiUrl,
+        key:'myCourse',
+        headers:{authorization:`Bearer ${token.value}`},
+		transform: (course) => course.data
+    })
 
-    const { data:course, error } = await useAsyncData('myCourse',
-	 	()=>findOne('courses/lessons', route.params.courseid),
-	 	{ 
-			headers:{authorization:`Bearer ${token.value}`},
-			transform: (course) => course.data
-		})     
-
-	if( error.value ) console.log(error);
+	if( error.value ) throw createError({ statusMessage:error.value.statusMessage, statusCode:error.value.statusCode })
 </script>
